@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,11 +31,17 @@
             outline: none;
             text-decoration: none;
             display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .email-wrapper {
+            width: 100%;
+            background-color: #f4f4f4;
         }
 
         .email-container {
-            width: 100%;
-            max-width: 600px;
+            width: 100% !important;
             margin: 0 auto;
             background-color: #ffffff;
         }
@@ -69,10 +74,6 @@
         }
 
         @media only screen and (max-width: 600px) {
-            .email-container {
-                width: 100% !important;
-            }
-
             .email-content {
                 padding: 25px 20px !important;
             }
@@ -85,47 +86,52 @@
                 display: block !important;
                 text-align: center !important;
             }
+
+            .logo-img {
+                width: 140px !important;
+                max-width: 100% !important;
+            }
         }
     </style>
 </head>
 
-<body>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
 
     <!-- Main Email Wrapper -->
-    <table role="presentation";
-           width="100%";
-           cellpadding="0";
-           cellspacing="0";
-           border="0";
-           bgcolor="#f4f4f4";
-           style="background-color: #f4f4f4;">
+    <table role="presentation"
+           width="100%"
+           class="email-wrapper"
+           cellpadding="0"
+           cellspacing="0"
+           border="0"
+           bgcolor="#f4f4f4"
+           style="width: 100%; background-color: #f4f4f4;">
 
         <tr>
-            <td align="center" style="padding: 30px 10px;">
+            <td align="center" style="padding: 40px 15px;">
 
                 <!-- Email Container -->
-                <table role="presentation";
-                       class="email-container";
-                       width="600";
-                       cellpadding="0";
-                       cellspacing="0";
-                       border="0";
-                       bgcolor="#ffffff";
-                       style="width: 100%; max-width: 600px; background-color: #ffffff;">
+                <table role="presentation"
+                       class="email-container"
+                       width="100%"
+                       cellpadding="0"
+                       cellspacing="0"
+                       border="0"
+                       bgcolor="#ffffff"
+                       style="width: 100%; background-color: #ffffff;">
 
                     <!-- Header -->
-                     <tr>
+                    <tr>
                         <td align="center" style="padding: 30px 20px; background-color: #ffffff;">
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
                                 <tr>
-                                    <td align="middle" style="padding-right: 12px;">
-                                       
-                                        <img src="https://www.getzavi.store/_next/image?url=%2Fimages%2FGet%20zavi_logo.png&w=96&q=75" 
+                                    <td align="center" style="padding-right: 0;">
+                                        <img src="https://www.getzavi.store/_next/image?url=%2Fimages%2FGet%20zavi_logo.png&w=256&q=75" 
                                             alt="GET_ZAVI Logo" 
-                                            width="200" 
-                                            style="display: block; max-width: 200px; height: auto; border: 0; outline: none; text-decoration: none;" />
+                                            width="150" 
+                                            class="logo-img"
+                                            style="display: block; width: 150px; max-width: 100%; height: auto; border: 0; outline: none; text-decoration: none;" />
                                     </td>
-                                   
                                 </tr>
                             </table>
                         </td>
@@ -183,11 +189,11 @@
                             </p>
 
                             <!-- Accept Invitation Button -->
-                            <table role="presentation";
-                                   width="100%";
-                                   cellpadding="0";
-                                   cellspacing="0";
-                                   border="0">;
+                            <table role="presentation"
+                                   width="100%"
+                                   cellpadding="0"
+                                   cellspacing="0"
+                                   border="0">
 
                                 <tr>
                                     <td align="center"
@@ -215,12 +221,12 @@
                             </table>
 
                             <!-- Invitation Expiration Notice -->
-                            <table role="presentation";
-                                   width="100%";
-                                   cellpadding="0";
-                                   cellspacing="0";
-                                   border="0";
-                                   bgcolor="#eef4ff";
+                            <table role="presentation"
+                                   width="100%"
+                                   cellpadding="0"
+                                   cellspacing="0"
+                                   border="0"
+                                   bgcolor="#eef4ff"
                                    style="background-color: #eef4ff;">
 
                                 <tr>
@@ -311,9 +317,9 @@
 
                     <!-- Footer -->
                     <tr>
-                        <td class="email-footer";
-                            align="center";
-                            bgcolor="#f8f9fa";
+                        <td class="email-footer"
+                            align="center"
+                            bgcolor="#f8f9fa"
                             style="background-color: #f8f9fa;
                                    padding: 25px 20px;">
 
@@ -331,7 +337,7 @@
                                       color: #757373;
                                       font-size: 12px;">
 
-                                &copy; {{year}} GET_ZAVI.
+                                © {{year}} GET_ZAVI.
                                 All rights reserved.
 
                             </p>
